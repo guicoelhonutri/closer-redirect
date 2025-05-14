@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Redirecionando…</title>
+    <script>
+      const ig = new URLSearchParams(window.location.search).get('ig');
+      const telefone = '5531984092207';
+      const mensagem = `Oi, como funciona o acompanhamento?`;
+
+      const link = `https://wa.me/${telefone}?text=${encodeURIComponent(mensagem)}`;
+      window.location.href = link;
+    </script>
+  </head>
+  <body>
+    <p>Redirecionando para o WhatsApp…</p>
+  </body>
+</html>
